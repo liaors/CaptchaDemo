@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.rs.captchademo.MainActivity">
+    <com.rs.captchademo.captcha.Captcha
+        android:id="@+id/captCha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:src="@drawable/aa"
+        app:blockSize="100dp"
+        app:max_fail_count="5"
+        app:mode="mode_bar"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_mode"
+        android:layout_width="match_parent"
+        android:text="无滑动条模式"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
